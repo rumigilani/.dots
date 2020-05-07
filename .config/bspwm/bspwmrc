@@ -1,0 +1,47 @@
+#! /bin/sh
+
+# swap alt & super
+setxkbmap -option altwin:swap_alt_win
+
+# startup programs
+sxhkd &
+picom --config $HOME/.config/picom/picom.conf -b &
+# polybar example &
+$HOME/.config/polybar/launch.sh &
+
+# set wallpaper
+wal -i ~/Pictures/bg.jpg &
+
+# bsp config
+
+bspc config focus_follows_pointer true
+
+# bspc monitor -d I II III IV V VI VII VIII IX X
+# bspc monitor -d web term chat code music 6 7
+# bspc monitor -d term web code games chat VI VII VIII IX tunes
+bspc monitor -d term web code chat games tunes
+
+bspc config border_width         2
+
+bspc config window_gap          12
+
+
+
+bspc config split_ratio          0.52
+
+bspc config borderless_monocle   true
+
+bspc config gapless_monocle      true
+
+
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+
+bspc rule -a Chromium desktop='^2'
+
+bspc rule -a mplayer2 state=floating
+
+bspc rule -a Kupfer.py focus=on
+
+bspc rule -a Screenkey manage=off
+
