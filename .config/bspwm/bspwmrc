@@ -10,7 +10,7 @@ picom --config $HOME/.config/picom/picom.conf -b &
 $HOME/.config/polybar/launch.sh &
 
 # set wallpaper
-wal -i ~/Pictures/bg.jpg &
+wal -i ~/wallpapers/bg.jpg &
 
 # bsp config
 
