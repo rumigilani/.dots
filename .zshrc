@@ -84,3 +84,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+
+eval $(thefuck --alias)
