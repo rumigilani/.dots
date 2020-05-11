@@ -4,7 +4,9 @@ super + shift + m
     brave
 super + shift + n
     dolphin
-
+super + shift + w
+	Wall-d -p -d ~/wallpapers
+	
 # SCREENSHOTS 
 #Currently using Spectacle for screenshots
 

@@ -50,7 +50,7 @@ font-5 = "Font Awesome 5 Brands:style=Regular:size=8;2"
 
 modules-left = xwindow
 modules-center = bspwm i3
-modules-right = volume filesystem memory cpu date
+modules-right = mpd volume filesystem memory cpu date
 ;modules-right = mpd volume filesystem xbacklight xkeyboard memory cpu wlan eth battery temperature date powermenu
 
 ;disable system tray (steam, discord, etc. icons)
